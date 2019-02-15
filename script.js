@@ -4,7 +4,6 @@ var names = [];
 
 
 
-
 document.getElementById("display").innerHTML = names;
 
 function addnames(){
@@ -17,18 +16,30 @@ names.sort();
 
 return document.getElementById("display").innerHTML = names.join(", ")
 
-randomize();
 
-console.log("newnames")
 
 }
 
 function randomize(){
-	var rand = names[Math.floor(Math.random() * names.length)];
+	var rand = names.splice([Math.floor(Math.random() * names.length)], 1);
 
-	return document.getElementById("display2").innerHTML = rand
+	
 
+	return document.getElementById("display2").innerHTML = rand;
+
+    
 }
+function refresh(){document.getElementById("display").innerHTML = names;}
 
+
+function randomize2(){
+	var rand = names.splice([Math.floor(Math.random() * names.length)], 2);
+
+	
+
+	return document.getElementById("display2").innerHTML = rand;
+
+    
+}
 
 

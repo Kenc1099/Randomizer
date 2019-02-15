@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Fantastic Randomizer</title>
+	<title>Randomizer</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js"></script>
 </head>
 <body>
+	<h1>random name picker</h1>
+	<p>* add a name below </p>
 <p id="display"></p>
-<button onclick="addnames()">+ add name</button>
-<button onclick="randomize(addnames)">RANDOMIZE</button>
+<button onclick="addnames()">+ add name</button> <br>
+
+
+<button onclick="randomize(addnames)">draw random name</button>
+
+<button onclick="randomize2(addnames)">draw 2 random names</button>
+
+
+
+<button onclick="refresh()">refresh name list</button>
+
+
 <p id="display2"></p>
 </body>
 </html>
